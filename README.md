@@ -4,7 +4,7 @@
 
 Scrolling 20x4 LCD Feed for Micropython and Rpi Pico
 
-This is written for the Freenove I2C LCD 2004 & I2C LCD 1602 modules. It utilizes the code provided by Freenove, except condensed into a single file with the addition of my LCD Feed functions. However, I beleive this code should work for most LCD displays from other vendors.
+This is written for the Freenove I2C LCD 2004 & I2C LCD 1602 modules. It utilizes the code provided by Freenove, except condensed into a single file with the addition of my LCD Feed functions. However, I believe this code should work for most LCD displays from other vendors.
 
 https://freenove.com/fnk0079/
 
