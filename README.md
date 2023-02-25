@@ -4,7 +4,7 @@
 
 Scrolling 20x4 LCD Feed for Micropython and Rpi Pico
 
-This is written for the Freenove I2C LCD 2004 & I2C LCD 1602 modules. It utilizes the code provided by Freenove, except condensed into a single file with the addition of my LCD Feed functions.
+This is written for the Freenove I2C LCD 2004 & I2C LCD 1602 modules. It utilizes the code provided by Freenove, except condensed into a single file with the addition of my LCD Feed functions. However, I beleive this code should work for most LCD displays from other vendors.
 
 https://freenove.com/fnk0079/
 
@@ -12,7 +12,7 @@ https://freenove.com/fnk0079/
 
 Copy *LCD_Display.py* into your Pico */lib* directory.
 
-Add the following lines to main.py:
+Add the following lines to main.py for a 20x4 display:
 
     import time
     from machine import I2C, Pin, UART
@@ -35,6 +35,11 @@ Add the following lines to main.py:
     lcd.feed("^^^^ Up")
     time.sleep(1)
     lcd.feed("as you add new ones")
+
+Alter the following lines in main.py for use with a 16x2 LCD display:
+
+     if devices != []:
+         lcd = I2CLcd(i2c, devices[0], 2, 16)
 
 For the Rpi Pico I have found that GPIO 20 & 21 are ideal for I2C devices because these pins are not otherwise used for functions such as UART, ADC or SPIO. Match the Pico & LCD SDA pins together. And match the SCL pins together. 
 
