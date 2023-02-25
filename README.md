@@ -15,7 +15,7 @@ Copy *LCD_Display.py* into your Pico */lib* directory.
 Add the following lines to main.py for a 20x4 display:
 
     import time
-    from machine import I2C, Pin, UART
+    from machine import I2C, Pin
     from LCD_Display import LcdApi, I2CLcd
 
     """LCD Section"""
