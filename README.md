@@ -10,7 +10,7 @@ https://freenove.com/fnk0079/
 
 ## Installation
 
-Copy LCD_Display into your Pico /lib directory.
+Copy *LCD_Display.py* into your Pico */lib* directory.
 
 Add the following lines to main.py:
 
@@ -35,3 +35,14 @@ Add the following lines to main.py:
     lcd.feed("^^^^ Up")
     time.sleep(1)
     lcd.feed("as you add new ones")
+
+For the Rpi Pico I have found that Pin 20 & 21 are ideal for I2C devices because these pins are not otherwise used for other functions such as UART, ADC or SPIO.
+
+![Rpi Pico Pinout](/images/Pico_Pinout.jpg#center)
+
+##lcd.topdata
+To feed the full 4 lines of text simply disable the *lcd.topdata* function with:
+    lcd.topdataline = False
+
+To start or resume a static top data line use:
+    lcd.topdata("  Your new string   ")
