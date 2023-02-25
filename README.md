@@ -38,9 +38,10 @@ Add the following lines to main.py:
 
 For the Rpi Pico I have found that Pin 20 & 21 are ideal for I2C devices because these pins are not otherwise used for other functions such as UART, ADC or SPIO.
 
-![Rpi Pico Pinout](/images/Pico_Pinout.jpg#center)
+![Rpi Pico Pinout](/images/Pico_Pinout.png#center)
 
-##lcd.topdata
+## lcd.topdata
+
 To feed the full 4 lines of text simply disable the *lcd.topdata* function with:
     lcd.topdataline = False
 
