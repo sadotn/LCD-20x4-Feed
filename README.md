@@ -2,9 +2,9 @@
 
 ![LCD Feed](/images/LCD_Feed.jpg#center)
 
-Scrolling 20x4 LCD Feed for Micropython and Rpi Pico
+lcd.feed creates terminal syle 20x4 LCD output, for Micropython and Rpi Pico.
 
-This is written for the Freenove I2C LCD 2004 & I2C LCD 1602 modules. It utilizes the code provided by Freenove, except condensed into a single file with the addition of my LCD Feed functions. However, I believe this code should work for most LCD displays from other vendors.
+This is written for the Freenove I2C LCD 2004 & I2C LCD 1602 modules. It utilizes the code provided by Freenove, except condensed into a single file with the addition of my LCD Feed functions. However, I believe this code should work for similar LCD displays from other vendors.
 
 https://freenove.com/fnk0079/
 
